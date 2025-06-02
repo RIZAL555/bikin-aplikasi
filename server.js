@@ -8,7 +8,7 @@ const io = new Server(server, {
     cors: { origin: "*" }
 });
 
-const rooms = ("4");
+const rooms = {};
 
 io.on("connection", socket => {
     socket.on("join-room", roomID => {
@@ -37,4 +37,8 @@ io.on("connection", socket => {
 });
 
 app.use(express.static("public"));
-server.listen(3000, () => console.log("Server ready on http://localhost:3000"));
+
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server ready on port ${PORT}`);
+});
