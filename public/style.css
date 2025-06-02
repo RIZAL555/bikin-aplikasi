@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#videos video {
+    width: 300px;
+    margin: 5px;
+}
+
+#controls {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+#chat {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 300px;
+    background: #f0f0f0;
+    padding: 10px;
+}
+
+#messages {
+    height: 150px;
+    overflow-y: auto;
+    background: #fff;
+    margin-bottom: 5px;
+}

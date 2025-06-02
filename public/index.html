@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zoom Clone</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="videos"></div>
+    <div id="controls">
+        <button id="muteBtn">🔇</button>
+        <button id="cameraBtn">📷</button>
+        <button id="leaveBtn">🚪</button>
+    </div>
+    <div id="chat">
+        <div id="messages"></div>
+        <input id="msgInput" placeholder="Type message..." />
+        <button id="sendBtn">Send</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-peer@9/simplepeer.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
